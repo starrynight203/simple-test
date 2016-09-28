@@ -5831,23 +5831,32 @@ body {
 .nav-image img {
   height: 100px;
   width: 300px;
-  padding: 20px 0 20px 50px; }
+  padding: 20px 0 20px 100px; }
 
 .icons {
   color: #fff;
   font-size: 30px;
-  padding: 30px; }
+  padding: 30px;
+  text-align: center; }
   .icons i {
     margin-right: 30px; }
 
 .nav-bar {
   background-color: #004ca8;
   color: #fff;
-  padding-left: 50px; }
+  padding-left: 100px;
+  padding-right: 100px; }
   .nav-bar i {
     margin-left: 5px; }
 
-.mid-page h1, .mid-page h3 {
+.mid-page h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 43px;
+  letter-spacing: 2px;
+  padding-top: 50px; }
+.mid-page p {
+  font-size: 18px;
   color: #fff;
   text-align: center; }
 
