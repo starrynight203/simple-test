@@ -5814,12 +5814,43 @@ button.close {
 img {
   max-width: 100%; }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
-  background-image: url("../images/header-img.jpg");
+  text-align: center;
+  font-family: 'Karla', serif; }
+
+.box {
+  width: 100%;
+  height: 100%;
+  vertical-align: center;
+  background-image: url("../images/header-img2.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  font-family: 'Karla', serif; }
+  position: relative; }
+
+.overlay {
+  position: relative; }
+
+.overlay:before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 0; }
+
+.overlay:before {
+  display: block; }
+
+.red:before {
+  background-color: rgba(1, 0, 0, 0.5); }
 
 .container-fluid {
   background-color: #111; }
@@ -5830,43 +5861,54 @@ body {
 
 .nav-image img {
   height: 100px;
-  width: 300px;
-  padding: 20px 0 20px 100px; }
+  width: 375px;
+  padding: 20px 0 20px 86px; }
 
 .icons {
   color: #fff;
   font-size: 30px;
-  padding: 30px;
+  padding: 30px 0 30px 30px;
   text-align: center; }
-  .icons i {
-    margin-right: 30px; }
+
+.icon-margin {
+  margin-right: 55px; }
+
+.search-icon {
+  margin-right: 0; }
 
 .nav-bar {
   background-color: #004ca8;
   color: #fff;
-  padding-left: 100px;
-  padding-right: 100px; }
+  padding-left: 25px;
+  padding-right: 25px; }
   .nav-bar i {
     margin-left: 5px; }
+  .nav-bar h3 {
+    text-align: center; }
 
 .mid-page h1 {
   color: #fff;
   text-align: center;
   font-size: 43px;
   letter-spacing: 2px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  margin-bottom: 40px; }
 .mid-page p {
-  font-size: 18px;
+  font-size: 19px;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 26px; }
 
 .btn {
   background-color: #004ca8;
   color: #fff;
   border-color: #004ca8;
   text-align: center;
-  padding: 10px 40px 10px 40px;
-  font-size: 16px;
-  letter-spacing: 1px; }
+  padding: 8px 42px 8px 42px;
+  font-size: 19px;
+  letter-spacing: 1px;
+  margin-bottom: 160px;
+  border-radius: 0px; }
 
 /*# sourceMappingURL=app.css.map */

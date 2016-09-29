@@ -15,13 +15,60 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 img {
   max-width: 100%;
 }
+// body {
+//   background-image: url('../images/header-img.jpg');
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   background-size: cover;
+//   font-family: 'Karla', serif;
+// }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url('../images/header-img.jpg');
+  text-align: center;
+  font-family: 'Karla', serif;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  // display: inline-block;
+  vertical-align: center;
+  background-image: url("../images/header-img2.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  font-family: 'Karla', serif;
+  position: relative;
 }
+
+.overlay {
+  position: relative;
+}
+
+.overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: none;
+  z-index:0;
+}
+
+.overlay:before{
+  display: block;
+}
+
+.red:before {
+  background-color: rgba(1,0,0,.5);
+}
+
+
 .container-fluid {
   background-color: #111;
   h3 {
@@ -33,26 +80,32 @@ body {
 .nav-image {
  img {
    height: 100px;
-   width: 300px;
-   padding: 20px 0 20px 100px;
+   width: 375px;
+   padding: 20px 0 20px 86px;
  }
 }
 .icons {
   color: #fff;
   font-size: 30px;
-  padding: 30px;
+  padding: 30px 0 30px 30px;
   text-align: center;
-  i {
-    margin-right: 30px;
-  }
+}
+.icon-margin {
+  margin-right: 55px;
+}
+.search-icon {
+  margin-right: 0;
 }
 .nav-bar {
   background-color: #004ca8;
   color: #fff;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
   i {
     margin-left: 5px;
+  }
+  h3 {
+    text-align: center;
   }
 }
 
@@ -63,11 +116,14 @@ body {
     font-size: 43px;
     letter-spacing: 2px;
     padding-top: 50px;
+    margin-bottom: 40px;
   }
   p {
-    font-size: 18px;
+    font-size: 19px;
     color: #fff;
     text-align: center;
+    margin-bottom: 40px;
+    line-height: 26px;
   }
 }
 .btn {
@@ -75,7 +131,9 @@ body {
   color: #fff;
   border-color: #004ca8;
   text-align: center;
-  padding: 10px 40px 10px 40px;
-  font-size: 16px;
+  padding: 8px 42px 8px 42px;
+  font-size: 19px;
   letter-spacing: 1px;
+  margin-bottom: 160px;
+  border-radius: 0px;
 }
